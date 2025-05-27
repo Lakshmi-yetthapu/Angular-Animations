@@ -1,4 +1,3 @@
-// src/app/faq/faq.component.ts
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
@@ -31,10 +30,10 @@ interface FaqItem {
         overflow: 'hidden'
       })),
       state('open', style({
-        height: '*', // 'auto' doesn't work for height animation, use '*'
+        height: '*', 
         opacity: '1',
-        paddingTop: '16px', // Adjust padding as needed
-        paddingBottom: '16px' // Adjust padding as needed
+        paddingTop: '16px', 
+        paddingBottom: '16px' 
       })),
       transition('closed <=> open', [
         animate('300ms ease-in-out')
